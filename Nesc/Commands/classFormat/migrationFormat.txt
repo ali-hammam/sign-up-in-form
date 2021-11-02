@@ -1,0 +1,24 @@
+<?php
+namespace Database\migrations;
+include ROOT.'/vendor/autoload.php';
+use DB\Table\Facades\ColumnPropertyFacade;
+use DB\Table\Facades\Table;
+use DB\Table\Migrations\migration;
+
+class test extends migration
+{
+    public function up(){
+        Table::create($this->className , function (){
+            $id = ColumnPropertyFacade::SetColumnBase('id')
+                            ->Number()
+                            ->primaryKey()
+                            ->getColumnProperty();
+
+            return[$id];
+        });
+    }
+
+    public function down(){
+        Table::drop($this->className);
+    }
+}

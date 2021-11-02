@@ -1,0 +1,10 @@
+<?php
+namespace Model;
+include ROOT.'/vendor/autoload.php';
+use Nesc\DB\Model\Model;
+
+class test extends Model
+{
+
+
+}

@@ -1,0 +1,40 @@
+#grad1 {
+  height: 55px;
+  background-image: linear-gradient(to left, #243b55, #141e30);
+}
+
+.border {
+  position: fixed;
+  top: 2%;
+  left: 38%;
+  padding: 90px 90px 50px 50px;
+  border-radius: 15px;
+  color: white;
+  background-color: #1f334b;
+  width: 25%;
+}
+
+.link-unstyled,
+.link-unstyled:link,
+.link-unstyled:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a {
+  color: white;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+}
+hr {
+  border-top: 1px solid white;
+}

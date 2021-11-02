@@ -1,0 +1,7 @@
+<?php
+require_once (ROOT.'/nesc/Router/Request.php');
+use Nesc\Router\Request;
+
+class test {
+
+}

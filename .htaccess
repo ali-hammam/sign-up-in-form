@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+
+    # Return 404 if original request contains .php
+    # RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
+    # RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
+    # RewriteRule .* - [L,R=404]
+
+    #route to web.php
+    RewriteCond %{SCRIPT_FILENAME} !-f
+    RewriteCond %{SCRIPT_FILENAME} !-d
+    RewriteRule ^(.*)$ web.php/?q=$1 [L,QSA]
+
+</IfModule>
+
+
+
+
